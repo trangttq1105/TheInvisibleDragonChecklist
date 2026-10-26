@@ -148,7 +148,7 @@ function shareAchievement() {
     `I've completed ${completed}/${total} missions to support ` +
     `#TheInvisibleDragon trailer! ` +
     `Join me and let's support it together!\n\n` +
-    `https://trangttq1105.github.io/TheInvisibleDragon/`;
+    `https://trangttq1105.github.io/TheInvisibleDragonChecklist/`;
 
   const shareUrl =
     "https://x.com/intent/tweet?text=" +
