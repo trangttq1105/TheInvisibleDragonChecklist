@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FFA500">
+  <title>The Invisible Dragon | Trailer Support Checklist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="page-header">
+      <h1>The Invisible Dragon</h1>
+      <h2>Trailer Support Checklist</h2>
+      <p>Every mission counts. Let's support the official trailer together!</p>
+    </header>
+
+    <section class="panel missions-panel">
+      <h2 class="panel-title">Your Missions</h2>
+
+      <h3 class="group-title">Before trailer</h3>
+      <div id="beforeMissions" class="mission-list"></div>
+
+      <h3 class="group-title">After trailer</h3>
+      <div id="afterMissions" class="mission-list"></div>
+    </section>
+
+    <section class="panel achievement-panel">
+      <h2 class="panel-title">Your Achievement</h2>
+
+      <p id="progressText" class="progress-text">
+        You've completed 0/12 missions!
+      </p>
+
+      <div
+        class="progress-track"
+        role="progressbar"
+        aria-label="Mission completion progress"
+        aria-valuemin="0"
+        aria-valuemax="12"
+        aria-valuenow="0"
+        id="progressTrack"
+      >
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+
+      <button id="shareButton" class="share-button" type="button">
+        Share Your Achievement
+      </button>
+
+      <p class="share-note">
+        Share your progress on X and invite others to join!
+      </p>
+    </section>
+
+    <footer class="page-footer">
+      <p>Made by International Fans (@FirstKhaoFans)</p>
+      <a href="https://trangttq1105.github.io/TheInvisibleDragon/">
+        The Invisible Dragon Support Tool
+      </a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
