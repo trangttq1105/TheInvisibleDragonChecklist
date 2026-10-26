@@ -1,0 +1,219 @@
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: #FFA500;
+  --orange-dark: #D88700;
+  --orange-light: #FFF3DB;
+  --text: #292929;
+  --muted: #777777;
+  --border: #E7E7E7;
+  --background: #F7F7F7;
+  --white: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  padding: 32px 16px 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--background);
+  line-height: 1.5;
+}
+
+.container {
+  width: min(760px, 100%);
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.page-header h2 {
+  margin: 4px 0 8px;
+  color: var(--orange-dark);
+  font-size: 21px;
+}
+
+.page-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.panel {
+  padding: 24px;
+  margin-bottom: 20px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.panel-title {
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+
+.group-title {
+  margin: 22px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--orange);
+  font-size: 17px;
+}
+
+.group-title:first-of-type {
+  margin-top: 0;
+}
+
+.mission-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mission-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--white);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.mission-item:has(input:checked) {
+  background: var(--orange-light);
+  border-color: var(--orange);
+}
+
+.mission-checkbox {
+  width: 19px;
+  height: 19px;
+  flex: 0 0 19px;
+  margin: 3px 0 0;
+  accent-color: var(--orange-dark);
+  cursor: pointer;
+}
+
+.mission-label {
+  flex: 1;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.mission-label a {
+  color: #A96300;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.mission-label a:hover {
+  color: var(--orange-dark);
+}
+
+.achievement-panel {
+  text-align: center;
+}
+
+.progress-text {
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.progress-track {
+  width: 100%;
+  height: 12px;
+  margin-bottom: 22px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #EEEEEE;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--orange);
+  transition: width 0.25s ease;
+}
+
+.share-button {
+  width: 100%;
+  max-width: 360px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 9px;
+  background: var(--orange);
+  color: #292929;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.share-button:hover {
+  background: #FFB52E;
+  transform: translateY(-1px);
+}
+
+.share-button:focus-visible,
+.mission-checkbox:focus-visible {
+  outline: 3px solid #8A5700;
+  outline-offset: 3px;
+}
+
+.share-note {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.page-footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.page-footer p {
+  margin-bottom: 4px;
+}
+
+.page-footer a {
+  color: #A96300;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px 12px 32px;
+  }
+
+  .page-header h1 {
+    font-size: 24px;
+  }
+
+  .page-header h2 {
+    font-size: 19px;
+  }
+
+  .panel {
+    padding: 17px;
+  }
+
+  .mission-item {
+    padding: 10px;
+  }
+}
